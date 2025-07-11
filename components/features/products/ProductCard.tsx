@@ -30,7 +30,7 @@ export function ProductCard({ product }: ProductCardProps) {
     return (
         <Card className="group overflow-hidden hover:shadow-lg transition-all duration-300">
             <Link href={`/products/${product.id}`}>
-                <div className="relative aspect-square overflow-hidden">
+                <div className="relative aspect-square overflow-hidden bg-background/40">
                     <Image
                         src={product.thumbnail}
                         alt={product.name}
@@ -63,9 +63,9 @@ export function ProductCard({ product }: ProductCardProps) {
                 </div>
             </Link>
 
-            <CardContent className="p-4">
+            <CardContent className="px-4 pb-4">
                 <Link href={`/products/${product.id}`}>
-                    <h3 className="font-semibold line-clamp-2 mb-2 hover:text-primary transition-colors">
+                    <h3 className="font-semibold text-lg line-clamp-1 mb-2 hover:text-primary transition-colors">
                         {product.name}
                     </h3>
                 </Link>
@@ -104,7 +104,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
             <CardFooter className="p-4 pt-0">
                 <Button
-                    className="w-full"
+                    className="w-full cursor-pointer"
                     onClick={handleAddToCart}
                     disabled={product.stock === 0}
                 >
