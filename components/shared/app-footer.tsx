@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 import { Logo } from '../common/logo';
 
-export function Footer() {
+const AppFooter = () => {
     const footerSections = [
         {
             title: 'Company',
@@ -107,3 +107,5 @@ export function Footer() {
         </footer>
     );
 }
+
+export default AppFooter

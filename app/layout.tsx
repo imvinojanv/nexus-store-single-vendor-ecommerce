@@ -1,8 +1,9 @@
-import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
-import { Providers } from '@/components/shared/providers';
+
+import './globals.css';
+import { ClientProviders } from '@/components/shared/client-provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -64,9 +65,9 @@ export default function RootLayout({
                     enableSystem
                     disableTransitionOnChange
                 >
-                    <Providers>
+                    <ClientProviders>
                         {children}
-                    </Providers>
+                    </ClientProviders>
                 </ThemeProvider>
             </body>
         </html>

@@ -26,7 +26,7 @@ import { useAppSelector } from '@/store/hooks';
 import { PopoverCart } from '@/components/features/cart/popover-cart';
 import { Logo } from '@/components/common/logo';
 
-export function Navbar() {
+const AppNavbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
     const { theme, setTheme } = useTheme();
@@ -37,7 +37,7 @@ export function Navbar() {
         { name: 'Home', href: '/' },
         { name: 'Products', href: '/products' },
     ];
-    
+
 
     return (
         <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
@@ -45,7 +45,7 @@ export function Navbar() {
                 <div className="flex items-center justify-between h-16 gap-4">
                     <div className='flex items-center justify-center gap-4 lg:gap-8 xl:gap-16'>
                         {/* Logo */}
-                        <Logo href="/" size='small'/>
+                        <Logo href="/" size='small' />
 
                         {/* Desktop Navigation */}
                         <div className="hidden md:flex items-center space-x-8">
@@ -173,3 +173,5 @@ export function Navbar() {
         </nav>
     );
 }
+
+export default AppNavbar

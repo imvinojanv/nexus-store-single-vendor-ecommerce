@@ -1,5 +1,5 @@
-import { Navbar } from '@/components/shared/navbar';
-import { Footer } from '@/components/shared/footer';
+import AppNavbar from '@/components/shared/app-navbar';
+import AppFooter from '@/components/shared/app-footer';
 
 export default function MainLayout({
     children,
@@ -8,9 +8,9 @@ export default function MainLayout({
 }) {
     return (
         <div className="min-h-screen flex flex-col">
-            <Navbar />
+            <AppNavbar />
             <main className="flex-1">{children}</main>
-            <Footer />
+            <AppFooter />
         </div>
     );
 }
