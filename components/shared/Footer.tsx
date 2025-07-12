@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import { Store, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
+
+import { Logo } from '../common/logo';
 
 export function Footer() {
     const footerSections = [
@@ -38,11 +40,10 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                     {/* Brand Section */}
                     <div className="lg:col-span-2">
-                        <Link href="/" className="flex items-center space-x-2 mb-4">
-                            <Store className="h-8 w-8 text-primary" />
-                            <span className="text-xl font-bold">Nexus Store</span>
-                        </Link>
-                        <p className="text-muted-foreground mb-6 max-w-md">
+                        {/* Logo */}
+                        <Logo href="/" size='large' />
+
+                        <p className="mt-4 text-muted-foreground mb-6 max-w-md">
                             Your premier destination for quality products at unbeatable prices.
                             We're committed to providing an exceptional shopping experience with
                             fast shipping and excellent customer service.

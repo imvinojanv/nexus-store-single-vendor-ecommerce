@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 
 import { prisma } from '@/lib/prisma';
-import { ProductDetails } from '@/components/common/ProductDetails';
+import { ProductDetails } from '@/components/common/product-details';
 
 interface ProductPageProps {
     params: {

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useGetProductsQuery, useGetCategoriesQuery } from '@/services/productsApi';
 import { Filter, SortAsc } from 'lucide-react';
 
-import { ProductCard } from '@/components/features/products/ProductCard';
+import { ProductCard } from '@/components/features/products/product-card';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Skeleton } from '@/components/ui/skeleton';

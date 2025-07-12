@@ -1,4 +1,4 @@
-import { ProductList } from '@/components/features/products/ProductList';
+import { ProductList } from '@/components/features/products/product-list';
 
 export const metadata = {
     title: 'Products',
